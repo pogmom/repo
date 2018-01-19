@@ -1,0 +1,74 @@
+@font-face {
+	font-family: vt323;
+	src: url(../fonts/iOSSF.ttf);
+}
+
+body {
+	background-color: #faf0e6;
+	font-family: "vt323", sans-serif;
+}
+h1 {
+	color: Black;
+	font-family: Tahoma;
+	font-family: "vt323", sans-serif;
+	font-size: 200%;
+}
+p {
+	color: #064E25;
+	font-family: Tahoma;
+	font-family: "vt323", sans-serif;
+	font-size: 125%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+h2 {
+	color: #053F1E;
+	font-family: "vt323", sans-serif;
+	font-size: 165%;
+}
+a {
+	cursor: url('../images/cursor.ico'), default;
+	font-family: "vt323", sans-serif;
+}
+
+body {
+	cursor: url('../images/cursor.ico'), default;
+	font-family: "vt323", sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    overflow: hidden;
+    background-color: #555;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120%;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #444;
+}
+
+img {
+    z-index: -1;
+}
+
+.imgContainer{
+    float:left;
+}
