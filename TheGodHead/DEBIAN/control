@@ -1,0 +1,10 @@
+Package: com.mpg13.godhead
+Name: The GodHead
+Version: 1.0-1
+Architecture: iphoneos-arm
+Description: The GodHead "App" for iOS
+Homepage: https://mpg13.github.io
+Depiction: https://mpg13.github.io/repo/depicts/godhead.html
+Maintainer: MPG13 <micahplacido@gmail.com>
+Author: MPG13 <micahplacido@gmail.com>
+Section: Applications

@@ -1,0 +1,7 @@
+#!/bin/bash
+  
+echo "Lmao I'm surprised you installed this."
+echo "But hey, take a look i guess. Contact me if you've got questions!";
+
+uicache
+#end script
