@@ -1,2 +1,2 @@
-rm -r *.deb
-rm -r Packages.bz2
+rm -r ./pkgs/*.deb
+rm -r ./Packages.bz2
