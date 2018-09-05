@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Micah Gomez</title>
+<title>FlashBack</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,12 +10,12 @@
 </head>
 <body>
 	<panel>
+		<br>
 		<label>Requirements</label>
 	<fieldset>
 	<div>
-	<p>Requires SSH or A Terminal Applications </p>
-	<p>Confirmed to be compatible with iOS 11</p>
-	<p>Will likely work with lower iOS versions</p>
+	<p><strong>iOS Version:</strong> 11 (Will likely work with lower iOS versions)</p><hr>
+	<p><strong>Depends:</strong> IconSupport, SSH/Terminal Application </p>
 	</div>
 	</fieldset>
 		<br>
@@ -23,15 +23,39 @@
 	<fieldset>
 	<div>
 	<p>FlashBack is a script for easily switching between setups!</p>
-	<p>To use, simply run "FlashBack" as root over SSH or terminal. The rest is mostly self-explanatory. In the future, a demonstrational video will be available.</p>
-	<p>If you appreciate it, consider donating!</p>
+	<p>To use, simply run "FlashBack" as root over SSH or terminal.</p>
+	<hr><p><strong>Option 1:</strong> Backup current setup - this saves your wallpaper, icon layout, and tweak preferences (including themes and widgets)</p>
+	<p><strong>Option 2:</strong> Restore past setup - this also backs up your current setup in case you need to revert</p>
+	<p><strong>Option 3:</strong> Delete existing backups - type the name of the backup you wish to delete (this cannot be undone)</p>
+	<p><strong>Option 4:</strong> Delete AutoBackups - this deletes ALL AutoBackups</p>
+	<p><strong>Option 5:</strong> Package backup as DEB - this creates an installable DEB file for easily sharing your setups. With it, you can include required tweaks.</p>
+	</div>
+	</fieldset>
+		<br>
+		<label>FAQ</label>
+	<fieldset>
+	<div>
+	<p><strong>If a question you have isn't answered here, email me. I will answer you directly, and add it here if needed.</strong></p>
+	<hr><p><strong>Q:</strong> What exactly is backed up?</p>
+	<p><strong>A:</strong> Your backups contain Wallpapers, Icon Layouts, and tweak preferences. If you backup as a DEB, it can also help you restore installed tweaks.</p>
+	<hr><p><strong>Q:</strong> Why won't my wallpaper backup/restore???</p>
+	<p><strong>A:</strong> As of right now, FlashBack doesn't support system wallpapers. Why? I don't know. Otherwise, it would.</p>
+	<hr><p><strong>Q:</strong> Where are my backups stored in my filesystem?.</p>
+	<p><strong>A:</strong> You can find them in /Library/FlashBack/Backups/</p>
+	<hr><p><strong>Q:</strong> How do I share my setups with others?</p>
+	<p><strong>A:</strong> The best way to do this is to create a backup using option 1, then back it up to a DEB using option 5. Automatic mode is recomended for sharing setups. The best ways to share the DEB are my hosting your own YouRepo, or requesting that it be hosted on mine! Email me for more information.</p>
+		
+	<hr><p><strong>Q:</strong> This is a work of art! How do I show my appreciation?</p>
+	<p><strong>A:</strong> Well, donating is always an option! It really helps me out, and is a great motivator!<sup>The link is at the bottom!</sup></p>
 	</div>
 	</fieldset>
 		<br>
 		<label>Changelog</label>
 	<fieldset>
 	<div>
-		<p><strong>1.1</strong>: Added repo icon</p>
+		<p><strong>LATEST</strong></p>
+		<p><strong>1.3</strong>: Implemented wallpaper backup, icon layout backup, fixed color scheme on SSH via macOS, and added a version check for safety measures.</p><hr>
+		<p><strong>1.2</strong>: Added repo icon</p>
 		<p><strong>1.1</strong>: Big ol' rewrite. Thanks so much /u/LULShotz!</p>
 		<p><strong>1.0-beta3</strong>: Major fixes</p>
 		<p><strong>1.0-beta2</strong>: Minor fixes</p>
@@ -59,7 +83,7 @@
                         </label>
                     </div>
                 </div>
-            </a><a href="https://paylpal.me/MicahGomez" class=" cytyle-in">
+            </a><a href="https://paypal.me/MicahGomez" class=" cytyle-in">
 			<img class="icon" src="../images/paypal.png">
                 <div>
                     <div>
