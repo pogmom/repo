@@ -5,134 +5,195 @@
 #8BB174 Pale Green
 #B5CA8D Desaturated Yellow-Green
 */
+/*Meta stuff*/
 html, body {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	margin: 0;
-	scrollbar-width: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    scrollbar-width: none;
 }
 @media (prefers-color-scheme: dark) {
-	body {
-		background-image: linear-gradient(#8BB174, rgba(70, 70, 73, 1.00));
-		/*background-color: rgba(70,70,73,1.00);*/
-		color: white;
-	}
+    body {
+        background-image: linear-gradient(#8BB174, rgba(70, 70, 73, 1.00));
+        /*background-color: rgba(70,70,73,1.00);*/
+        color: white;
+    }
 }
 @media (prefers-color-scheme: light) {
-	body {
-		background-image: linear-gradient(#8BB174, linen);
-		/*background-color: linen;*/
-		color: black;
-	}
+    body {
+        background-image: linear-gradient(#8BB174, linen);
+        /*background-color: linen;*/
+        color: black;
+    }
 }
 .element::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 /*Standard Body CSS Starts*/
 body {
-	margin: 0;
-	font-family: 'Ubuntu', sans-serif;
-	/*background-color: linen;*/
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /*background-color: linen;*/
 }
 h1 {
-	color: #728A31;
-	font-size: 36pt;
+    color: #728A31;
+    font-size: 36pt;
 }
 h3 {
-	color: #689323;
-	font-size: 28pt;
-	text-align: center;
-	font-weight: 300;
+    color: #689323;
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 300;
 }
 h2 {
-	color: #315F10;
-	font-size: 18pt;
-	font-weight: 50;
+    color: #315F10;
+    font-size: 18pt;
+    font-weight: 50;
 }
 h4 {
-	color: #3F4C1B;
-	font-size: 12pt;
-	font-family: Courier New, Courier;
-	font-weight: 300;
+    color: #3F4C1B;
+    font-size: 12pt;
+    font-family: Courier New, Courier;
+    font-weight: 300;
 }
 p {
-	color: #3F4C1B;
-	font-size: 18pt;
-	text-align: left;
+    color: #3F4C1B;
+    font-size: 18pt;
+    text-align: left;
 }
 a {
-	text-decoration: none;
-	color: #315F10;
+    text-decoration: none;
+    color: #315F10;
 }
 ul > li {
-	display: inline-block;
-	/* You can also add some margins here to make it look prettier */
-	margin: 0px 25px;
-	zoom: 1;
-	vertical-align: middle;
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    margin: 0px 25px;
+    zoom: 1;
+    vertical-align: middle;
 }
 /*Standard Body CSS Ends*/
 /*special Body Info Starts*/
 .bodycontent {
-	text-align: left;
-	padding: 75px 100px;
+    text-align: left;
+    padding: 75px 100px;
 }
 .headingcontent {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 100%px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
 }
 .tilecontent {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin-top: 30px;
-	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 100%;
 }
 .contentbutton {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 5px 25px;
-	border-radius: 8px;
-	width: 100%;
-	border: none;
-	background-image: linear-gradient(to right, rgba(139, 177, 116, 1.00), rgba(120, 150, 120, 1.00) 33%);
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-	transition: 1s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 25px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(to right, rgba(139, 177, 116, 1.00), rgba(120, 150, 120, 1.00) 33%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
 }
 .contentbutton:hover {
-	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
-	transition: 0.25s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.25s;
 }
 .smbutton {
-	background-color: rgba(139, 177, 116, 1);
-	padding: 10px;
-	margin: 0px 15px;
-	border-radius: 12.632px;
-	transition: 1s;
+    background-color: rgba(139, 177, 116, 1);
+    padding: 10px;
+    margin: 0px 15px;
+    border-radius: 12.632px;
+    margin-bottom: 20px;
+    transition: 1s;
 }
 .smbutton:hover {
-	box-shadow: 5px 5px 10px black;
-	transition: 0.25s;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.25s;
 }
 .descriptionContent {
-	display: block;
-	padding: 25px;
-	margin-left: 10%;
-	border-radius: 8px;
-	width: 85%;
-	border: none;
-	background-color: rgba(139, 177, 116, 1.00);
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-	transition: 1s;
+    padding: 20px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(139, 177, 116, 1.00);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.descriptionContentText {
+    width: 65%;
+    float: left;
+}
+.descriptionContentTextFullWidth{
+    width: auto;
 }
 .descriptionContentImage {
-	border-radius: 10px;
-	width: 200px;
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
 }
 .footer-placeholder {
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
+}
+/*mobile setup*/
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    p {
+        font-size: 16pt;
+    }
+    .bodycontent {
+        padding: 75px 100px;
+    }
+    .descriptionContentImage {
+	    width: 100px;
+    }
+    .descriptionContentText {
+        width: 75%;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+    .footer-placeholder {
+        width: 100%;
+    }
+}
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 12pt;
+    }
+    li > p{
+        font-size: 10pt;
+    }
+    .bodycontent {
+        padding: 25px 20px;
+    }
+    .descriptionContentImage {
+        width: 50px;
+    }
+    .descriptionContentText{
+        width: 65%;
+    }
+    h2 {
+        font-size: 14pt;
+    }
+    .footer-placeholder {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.descriptionContentTextFullWidth{
+    width: auto;
 }
