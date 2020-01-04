@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Micah Gomez</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+<script src="https://micahpgomez.dev/js/jquery.min.js"></script> 
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<script>
+        var url = window.location.href
+        var captured = /selectedPackage=([^&]+)/.exec(url)[1];
+        var selectedPackage = captured ? captured : 'myDefaultValue';
+    
+        console.log(selectedPackage)
+    
+        $(function(){
+            $("#DescriptionContent").load("/depicts/"+selectedPackage+"/description.html");
+            $("#ScreenshotContent").load("/depicts/"+selectedPackage+"/screenshots.html");
+            $("#ChangeLogContent").load("/depicts/"+selectedPackage+"/changelog.html");
+            $("#HeaderContent").load("/depicts/"+selectedPackage+"/header.html");
+        });
+    
+    </script>
+<div class="bodycontent">
+    <div class="headingcontent" id="HeaderContent"></div>
+    <br>
+    <div>
+        <div class="tilecontent">
+            <button id="packageDescription" class="contentbutton">
+            <p>Description</p>
+            </button>
+            <div id="DescriptionContent"></div>
+            <br>
+            <button id="packageScreenshots" class="contentbutton">
+            <p>Screenshots</p>
+            </button>
+            <div id="ScreenshotContent"></div>
+            <br>
+            <button id="packageChanges" class="contentbutton">
+            <p>Changelog</p>
+            </button>
+            <div id="ChangeLogContent"></div>
+            <br>
+            <br>
+            <button onclick="location.href='https://micahpgomez.dev';" class="contentbutton">
+            <p>Home Page</p>
+            </button>
+            <br>
+        </div>
+    </div>
+</div>
+    
+<script>
+$(document).ready(function(){
+	$("#DescriptionContent").hide();
+	$("#ScreenshotContent").hide();
+	$("#ChangeLogContent").hide();
+	
+	$("#packageDescription").click(function(){
+		$("#DescriptionContent").slideToggle();
+	});
+	$("#packageScreenshots").click(function(){
+		$("#ScreenshotContent").slideToggle();
+	});
+	$("#packageChanges").click(function(){
+		$("#ChangeLogContent").slideToggle();
+	});
+});
+</script>
+
+<!-- Default Statcounter code for Mpg13.github.io Repo
+http://mpg13.github.io/repo --> 
+<script type="text/javascript">
+var sc_project=11785589; 
+var sc_invisible=1; 
+var sc_security="fd418960"; 
+</script> 
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript>
+<div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11785589/0/fd418960/1/" alt="free
+web stats"></a></div>
+</noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
