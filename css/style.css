@@ -1,0 +1,299 @@
+/*Color scheme:
+#455144 grey/green
+#3F4C1B Dark Green
+#689323 Standard Green
+#8BB174 Pale Green
+#B5CA8D Desaturated Yellow-Green
+*/
+/*Meta stuff*/
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  pointer-events: none;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+html, body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    scrollbar-width: none;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: linear-gradient(#32CCFE, #C700D7);
+        /*background-color: rgba(70,70,73,1.00);*/
+        color: white;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-image: linear-gradient(#32CCFE, #DA74E5);
+        /*background-image: linear-gradient(#8BB174, linen);*/
+        /*background-color: linen;*/
+        color: black;
+    }
+}
+.element::-webkit-scrollbar {
+    display: none;
+}
+/*Standard Body CSS Starts*/
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /*background-color: linen;*/
+}
+h1 {
+    color: #FFFFFF;
+    /*color: #728A31;*/
+    font-size: 36pt;
+	opacity: 0.7;
+}
+h3 {
+    color: #FFFFFF;
+    /*color: #689323;*/
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 300;
+}
+a {
+    /*text-decoration: none;*/
+    /*color: #315F10;*/
+    color: #FFFFFF;
+}
+h2 {
+    color: #FFFFFF;
+    /*color: #315F10;*/
+    font-size: 18pt;
+    font-weight: 50;
+	opacity: 0.7;
+}
+
+h4 a {
+	border-bottom: 2px solid currentColor;
+}
+
+h4 {
+    color: #FFFFFF;
+    /*color: #3F4C1B;*/
+    font-size: 14pt;
+    font-family: Courier New, Courier;
+    font-weight: 300;
+	opacity: 0.7;
+}
+p {
+    color: #FFFFFF;
+    /*color: #3F4C1B;*/
+    font-size: 18pt;
+    text-align: left;
+	display: block;
+	opacity: 0.7;
+}
+ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    margin: 0px 25px;
+    zoom: 1;
+    vertical-align: middle;
+	width:-webkit-fill-available;
+}
+
+#mkartdata {
+  width: 100%;
+}
+#mkartdata td, #mkartdata th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#mkartdata tr:nth-child(even){background-color: rgba(255, 255, 255, 0.25);}
+/*Standard Body CSS Ends*/
+/*special Body Info Starts*/
+.bodycontent {
+    text-align: left;
+    padding: 75px 100px;
+}
+.headingcontent {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+.tilecontent {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+}
+.contentbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 25px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    /*background-image: linear-gradient(to right, rgba(120, 150, 120, 1.00), rgba(139, 177, 116, 1.00) 60%);*/
+    background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: saturate(135%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.contentbutton:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.25s;
+}
+.smbutton {
+	width: 30px;
+	opacity: 0.6;
+	background-color: rgba(255, 255, 255, 0.35);
+	backdrop-filter: saturate(120%) blur(10px);
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 12.632px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+.smbutton:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: 0.25s;
+}
+.descriptionContent {
+    padding: 20px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: saturate(120%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+.dcLeft{
+	margin-left: 2.5%
+}
+/*.descriptionContent {
+    padding: 20px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(139, 177, 116, 1.00);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}*/
+.descriptionContentText {
+    float: left;
+	margin-right: 5%;
+}
+.descriptionContentImage {
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+.contentGroup{
+	display: none;
+}
+
+.footer-placeholder {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*mobile setup*/
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    p {
+        font-size: 16pt;
+    }
+	.citation {
+		font-size: 12pt;
+		font-style: italic;
+        word-wrap:break-word;
+	}
+    .subSectionTitle {
+		font-weight: bold;
+	}
+    .bodycontent {
+        padding: 25px 100px;
+    }
+    .descriptionContentImage {
+	    width: 100px;
+    }
+    .descriptionContentText {
+        width: 75%;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+    .footer-placeholder {
+        width: 100%;
+    }
+}
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 12pt;
+    }
+	.citation {
+		font-size: 8pt;
+		font-style: italic;
+        word-wrap:break-word;
+	}
+    .subSectionTitle {
+		font-weight: bold;
+	}
+    li > p{
+        font-size: 10pt;
+    }
+    .bodycontent {
+        padding: 10px 20px;
+    }
+    .descriptionContentImage {
+        width: 50px;
+    }
+    .descriptionContentText{
+        width: 60%;
+    }
+    h2 {
+        font-size: 14pt;
+    }
+    .footer-placeholder {
+        width: 70%;
+        margin: auto;
+    }
+    #mkartdata tr:nth-child(4n+2) > *:nth-child(1) {
+         display: none;
+    }
+    #mkartdata tr:nth-child(1) > *:nth-child(1) {
+         display: none;
+    }
+    
+}
+
+.descriptionContentTextFullWidth{
+	display: block;
+    width: 100%;
+}
